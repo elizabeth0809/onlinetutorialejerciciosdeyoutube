@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Incrementar</title>
+</head>
+<body>
+	<div id="vm">
+<button v-on:click="primero++">Incrementar el primero</button>
+<button v-on:click="segundo++">Incrementar el segundo</button>
+<button v-on:click="tercero++">Incrementar el tercero</button>
+<p>Primero:{{primero}}</p>
+<p>segundo:{{segundo}}</p>
+<p>tercero:{{tercero}}</p>
+<p>suma:{{total}}</p>
+
+</div>
+<!--suma-->
+<div id="eventos">
+	<button v-on:click="sumarUno">Sumar uno</button>
+	<button v-on:click="restarUno">Sumar uno</button>
+	<hr>
+	{{contador}}
+</div>
+<div id="mv">
+	<ul>
+		<li v-for="pais in paises">
+			{{pais}}
+		</li>
+	</ul>
+</div>
+<div id="eventoClickAlerta">
+	<button v-on:click="alerta('Esta es la alerta')">Mostrar alerta</button>
+</div>
+<div id="eventoMouse">
+	<div style="height: 300px" v-on:mousemove="mostrarUbicacion" v-on:click.once="sumar(3)">
+		x: {{x}}
+		<br> y:{{y}}
+		<br> contador:{{contador}}
+		<br> <input type="text" v-on:keyup.delete="sumar(1)">
+	</div>
+</div>
+</body>
+<script src="vue_fre.js"></script>
+    <script src="vue.js"></script>
+</html>

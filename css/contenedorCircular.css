@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(../img/O1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding: 30px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0,0,0,.2);
+}
+.circle{
+	width: 250px;
+	height: 250px;
+	background: url(../img/11.jpg);
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin: 70px 30px 30px 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	line-height: 22px;
+}
+h1{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 30px;
+}

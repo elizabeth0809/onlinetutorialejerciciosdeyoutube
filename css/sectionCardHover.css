@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 100vh;
+	background-color: #03000d;
+	color: #606060;
+}
+.row{
+	margin: 0 -15px;
+	width: 900px;
+}
+.col-4{
+	width: calc(100% / 3);/*esto calcula el espacio de 4 elementos para que quepan en un espacio al 100%*/
+	float: right;
+	padding: 0 15px;
+}
+.box{
+	background-color: #fff;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+}
+.imgbox{
+	height: 100%;
+	padding: 0;
+	display: block;
+	transition: .5s;
+}
+.box:hover .imgbox{
+	height: calc(100% - 115px);
+	padding: 20px 20px 0px 20px;
+}
+.imgbox-inner{
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.icons{
+	position: absolute;
+	z-index:2;
+	right: 5px; 
+	top: 5px;
+}
+img{
+	width: 110%;
+	position: relative;
+	bottom: 0;
+	display: block;
+	left: 50%;
+	transform: translateX(-50%) scale(1.2);
+	transition: .5s;
+}
+.box:hover img{
+	transform: translateX(-50%) scale(1);
+}
+.detail{
+	text-align: center;
+}
+.detail-inner{
+	padding: 20p
+}
+.detail a{
+	font-size: 20px;
+	font-weight: 600px;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: block;
+	color: #313131;
+}

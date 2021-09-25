@@ -1,0 +1,115 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+section{
+	height: 100vh;
+	background: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;/*Esto hace que el contenido este centrado en el contendor*/
+
+}
+section.banner{
+	background:url(../img/D1.jpg);
+	background-size: cover;
+}
+section.banner .content{
+	text-align: center;
+
+}
+section.banner .content h1{
+	font-size: 120px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+	padding: 0;
+}
+section.banner .content a{
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px 40px;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+section.banner .content a:hover{
+	background: #ff0;
+	border: 2px solid #ff0;
+	color: #262626;	
+}
+.post{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	background: #fff;
+}
+.post img{
+	object-fit: cover;
+	height: 500px;
+	width: 800px;
+}
+.post .btn{
+position: absolute;
+border: 2px solid #262626;
+color: #fff;
+background: purple;
+padding: 10px 40px;
+font-size: 24px;
+text-decoration: none;
+font-weight: 500;
+text-transform: uppercase;
+}
+.post .btn.prev{
+	top: 50px;
+	left: -80px;
+}
+.post .btn.next{
+	bottom: 50px;
+	right: -80px;
+}
+.post-tittle{
+	position: absolute;
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	bottom: 20px;
+	left: 20px;
+	font-size: 32px;
+	font-weight: 600;
+	padding: 20px;
+	line-height: 40px;
+	width: calc(100% - 100px);
+	box-sizing: border-box;
+}
+.post-date{
+	position: absolute;
+	border: 2px solid #262626;
+	top: -50px;
+	right: 50px;
+	background: purple;
+	color: #262626;
+	padding: 20px;
+}
+.post-date span{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+.post-date span:nth-child(1)
+{
+	font-size: 60px;
+	font-weight: 600;
+}
+.post-date span:nth-child(2),
+.post-date span:nth-child(3){
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 20px;
+}

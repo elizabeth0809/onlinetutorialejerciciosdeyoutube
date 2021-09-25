@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax Scrolling With Javasript</title>
+	<link rel="stylesheet" type="text/css" href="css/styleScroll.css">
+</head>
+<body>
+	<section class="zoom">
+		<img src="img/KT1.png" id="layer1">
+		<img src="img/T1.png" id="layer2">
+		<img src="img/logo.png" id="text">
+
+	</section>
+	<section class="content">
+		<h2>Simple Background Parallax Usig JavaScript</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+<script type="text/javascript">
+	var layer1 = document.getElementById('layer1')
+	scroll = window.pageYOffset;
+	document.addEventListener('scroll',
+		function(e){
+			var offset = window.pageYOffset;
+			scroll = offset;
+			layer1.style.width = (70 + scroll/10) + '%'
+});
+	var layer2 = document.getElementById('layer2')
+	scroll = window.pageYOffset;
+	document.addEventListener('scroll',
+		function(e){
+			var offset = window.pageYOffset;
+			scroll = offset;
+			layer2.style.width = (70 + scroll/10) + '%';
+			layer2.style.bottom = (70 + scroll/10) + '%';
+
+});
+		var text = document.getElementById('text')
+	scroll = window.pageYOffset;
+	document.addEventListener('scroll',
+		function(e){
+			var offset = window.pageYOffset;
+			scroll = offset;
+			text.style.top = (100 + scroll/5) + '%';
+			text.style.top =  -scroll/5 + '%';
+
+});
+</script>
+</body>
+</html>
